@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<head>
+  <title>Portfolio - Emmanuel Gunawan</title>
+
+  <!-- Meta Tag for Responsive -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- CSS Global -->
+  <link rel="stylesheet" href="mycss.css">
+
+  <!-- CSS Index -->
+  <link rel="stylesheet" href="index.css">
+
+  <!-- CSS Carousel -->
+  <link rel="stylesheet" href="carousel.css">
+
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap" rel="stylesheet">
+
+  <!-- AOS -->
+   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <!-- FLICKITY CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    
+  <!-- FLICKITY JS -->
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+</head>
+
+<body>
+  
+  <!-- BG VIDEO -->
+  <video autoplay muted loop playsinline id="bg-video">
+    <source src="video/bg-animate-comp.mp4" type="video/mp4">
+  </video>
+
+  <!-- ===== HEADER (Dikompres) ===== -->
+
+  <!-- ===== NAVBAR ===== -->
+<div class="background navbar">
+  <div class="subcontainer navbar-inner">
+    <div class="nav-logo">
+      <a href="#home" class="menu" id="menu_home"><img src="images/logo-n.png" alt="Logo" class="nav-logo-img"></a>
+    </div>
+
+    <div class="nav-menu">
+      <a href="#home" class="menu" id="menu_home">Beranda</a>
+      <a href="#portfolio" class="menu" id="menu_portfolio">Karya</a>
+      <a href="#about" class="menu" id="menu_about">Tentang</a>
+      <a href="#services" class="menu" id="menu_services">Layanan</a>
+      <a href="#contact" class="menu" id="menu_contact">Kontak</a>
+    </div>
+  </div>
+</div>
+
+  <!-- ===== home SECTION ===== -->
+  <div class="background" id="home">
+    <div class="container home">
+      <div class="child col100" style="text-align:center; padding:80px 20px;">
+        <h2>Halo, saya <span>Noel</span></h2>
+        <p>Saya adalah seorang Video Editor, Motion Designer, dan Graphic Designer</p>
+      </div>
+    </div>
+  </div>
+
+<!-- ===== PORTFOLIO SECTION ===== -->
+<div class="portfolio" style="margin-top: 190px;" id="portfolio">
+  <div class="container portfolio">
+    <div class="child col100" style="text-align:center; margin-bottom:30px;" data-aos="fade-up"  data-aos-duration="750" data-aos-anchor-placement="top-center">
+      <h2>Karya Saya</h2>
+      <!-- <p>My Portfolio</p> -->
+
+      <!-- List -->
+      <div class="subcontainer portfolio-list" style="justify-content:center; margin-top:15px; gap: 10px;" data-aos="fade-up" data-aos-duration="750" data-aos-anchor-placement="top-center">
+        <div class="subchild col10"><div class="list" id="list-video">Video</div></div>
+        <div class="subchild col10"><div class="list" id="list-photo">Photo</div></div>
+        <div class="subchild col10"><div class="list" id="list-motion">Motion</div></div>
+        <div class="subchild col10"><div class="list" id="list-design">Design</div></div>
+        <div class="subchild col10"><div class="list" id="list-design">3D</div></div>
+      </div>
+    </div>
+  </div>
+
+<!-- Flickity HTML init -->
+<div class="gallery js-flickity grid"
+  data-flickity='{ 
+    "wrapAround": true,
+    "pageDots": true,
+    "prevNextButtons": true,
+    "imagesLoaded": true
+
+  }' 
+  data-aos="fade-up"
+  data-aos-duration="750" 
+  data-aos-anchor-placement="top-center">
+
+    <!-- Motion Design -->
+    <div class="gallery-cell" data-category="Motion Design">
+      <img src="images/modes-solo.png" alt="Motion Design" id="grid-modes">
+      <div class="grid-caption">Motion Design</div>
+      <div class="overlay-text">Klik Untuk Selengkapnya</div>
+    </div>
+
+    <!-- Image Editing -->
+    <div class="gallery-cell" data-category="Image Editing">
+      <img src="images/manip-solo.png" alt="Image Editing" id="grid-imed">
+      <div class="grid-caption">Image Editing</div>
+      <div class="overlay-text">Klik Untuk Selengkapnya</div>
+    </div>
+
+    <!-- Graphic Design -->
+    <div class="gallery-cell" data-category="Graphic Design">
+      <img src="images/gradess-solo.png" alt="Graphic Design" id="grid-grades">
+      <div class="grid-caption">Graphic Design</div>
+      <div class="overlay-text">Klik Untuk Selengkapnya</div>
+    </div>
+
+    <!-- Visual Effects -->
+    <div class="gallery-cell" data-category="Visual Effects">
+      <img src="images/vfx-solo.png" alt="Visual Effects" id="grid-vfx">
+      <div class="grid-caption">Visual Effects</div>
+      <div class="overlay-text">Klik Untuk Selengkapnya</div>
+    </div>
+
+    <!-- 3D Model -->
+    <div class="gallery-cell" data-category="3D Model">
+      <img src="images/3d-solo.png" alt="3D Model" id="grid-3d">
+      <div class="grid-caption">3D Model</div>
+      <div class="overlay-text">Klik Untuk Selengkapnya</div>
+    </div>
+
+    <!-- Creative Video -->
+    <div class="gallery-cell" data-category="Creative Video">
+      <img src="images/creative-solo.png" alt="Creative Video" id="grid-crevid">
+      <div class="grid-caption">Creative Video</div>
+      <div class="overlay-text">Klik Untuk Selengkapnya</div>
+    </div>
+</div>
+
+
+  <!-- YOUTUBE -->
+  <div class="container portfolio">
+    <div class="child col100" style="text-align:center; margin-bottom:30px;" data-aos="fade-up" data-aos-duration="750" data-aos-anchor-placement="top-center">
+      <h2>Lihat juga di <span id="you">You</span><span id="tube">Tube</span></h2>
+    </div>
+  </div>
+
+  <div class="subcontainer portfolio-yt" data-aos="fade-up" data-aos-duration="750" data-aos-anchor-placement="top-center">
+    <div class="subchild col30 yt" id="grid-yt1">
+      <iframe width="100%" height="200" src="https://www.youtube.com/embed/6iT6YEXzAmI?si=dAT3zQmTrBTBmRm_" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+      <div class="yt-caption">The 2024 Closing</div>
+    </div>
+
+    <div class="subchild col30 yt" id="grid-yt2">
+      <iframe width="100%" height="200" src="https://www.youtube.com/embed/D_8eE0duHQw?si=NqfZgBP0hmDi3VP3" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+      <div class="yt-caption">Farewell, Multimedia II</div>
+    </div>
+
+    <div class="subchild col30 yt" id="grid-yt3">
+      <iframe width="100%" height="200" src="https://www.youtube.com/embed/PT41SgT9zKQ?si=aRQ8IXEhkpzQsBz5" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+      <div class="yt-caption">The Epic Showdown</div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== ABOUT SECTION ===== -->
+  <div class="background" id="about" >
+    <div class="container about" data-aos="fade-up" data-aos-duration="750" data-aos-anchor-placement="top-center">
+      <div class="child col100" >
+        <h2>Tentang Saya</h2>
+        <!-- <p><span>About Me</span></p> -->
+      </div>
+    </div>
+
+<div class="subcontainer about-content" data-aos="fade-up" data-aos-duration="750" data-aos-anchor-placement="top-center">
+  <div class="subchild col40" id="foto-profil">
+    <img src="images/foto-profil.png" alt="Foto Profil">
+  </div>
+  <div class="subchild col60">
+    <p>
+      Saya berfokus pada dunia kreatif dan visual, dengan keyakinan bahwa visual yang kuat mampu menyampaikan cerita lebih dalam daripada sekadar kata-kata. 
+      Bagi saya, desain bukan hanya soal estetika, tetapi juga tentang bagaimana sebuah visual dapat membangun emosi, makna, dan pengalaman.
+      Dengan kemampuan yang terus saya asah, saya berkomitmen untuk menghadirkan karya yang berkualitas, relevan, dan bernilai. 
+      Setiap proyek menjadi kesempatan untuk mengeksplorasi ide, memahami kebutuhan, dan menciptakan solusi visual yang tepat sasaran.
+    </p>
+  </div>
+</div>
+  </div>
+<!-- ===== SERVICES SECTION ===== -->
+  <div class="services" id="services" >
+    <div class="section-title" data-aos="fade-up" data-aos-duration="750" data-aos-anchor-placement="top-center">
+      <h2>Layanan</h2>
+      <!-- <p><span>My Service</span></p> -->
+    </div>
+
+<div class="services-container" data-aos="flip-up" data-aos-duration="750" data-aos-anchor-placement="top-center">
+  <div class="service-card" id="modes" data-aos="flip-up" data-aos-duration="750" data-aos-anchor-placement="top-center">
+    <h3>Motion & Graphic Design</h3>
+    <div class="underline"></div>
+    <p>Menghadirkan desain grafis dan animasi yang bekerja selaras untuk memperkuat pesan visual. 
+      Setiap elemen dirancang dengan ritme, komposisi, dan gerak dinamis agar karya terasa hidup, konsisten, serta mudah diingat.</p>
+  </div>
+
+  <div class="service-card" id="vided" data-aos="flip-up" data-aos-anchor-placement="top-center">
+    <h3>Video Editing</h3>
+    <div class="underline"></div>
+    <p>Mengolah potongan video menjadi cerita yang mengalir dan punya karakter. 
+      Fokus pada alur, warna, dan suasana supaya hasil akhirnya bukan cuma enak dilihat, tapi juga bisa dirasakan oleh penonton.</p>
+  </div>
+
+  <div class="service-card" id="imed" data-aos="flip-up" data-aos-anchor-placement="top-center">
+    <h3>Image Editing</h3>
+    <div class="underline"></div>
+    <p>Meningkatkan tampilan visual lewat retouching dan manipulasi gambar dengan detail yang rapi. 
+      Setiap hasil diedit agar terlihat lebih estetik, seimbang, dan sesuai dengan gaya atau identitas visual yang diinginkan.</p>
+  </div>
+  </div>
+</div>
+<!-- ===== CONTACT SECTION ===== -->
+<div class="background" id="contact">
+  <div class="contact-kiri" >
+    <!-- Kiri -->
+    <div class="contact-info">
+      <h2>Kontak</h2>
+      <p>Hubungi saya kapanpun!</p>
+      <div class="contact-icon">
+        <a href="https://instagram.com/wakeupnoel" target="_blank"><div class="contact-ig"></div></a>
+        <a href="mailto:rianox.noel@gmail.com"><div class="contact-email"></div></a>
+        <a href="https://linkedin.com/in/noelgg" target="_blank"><div class="contact-linkedin"></div></a>
+      </div>
+    </div>
+
+<div class="contact-form">
+  <div class="form">Nama</div>
+  <div class="form">Email</div>
+  <div class="form">Pesan</div>
+  <div class="kirim">Kirim</div>
+</div>
+  </div>
+  <!-- Kanan-->
+   <div class="contact-kanan">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.5546870419544!2d112.75623702500005!3d-7.291397942716055!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7fbb476048727%3A0x5f5f7cf736ae643e!2sInstitut%20Sains%20dan%20Teknologi%20Terpadu%20Surabaya%20(ISTTS)!5e0!3m2!1sid!2sid!4v1761670126467!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+   </div>
+</div>
+  <!-- ===== FOOTER ===== -->
+  <div class="background footer">
+      <div class="child col100" style="text-align:center; padding:20px; background:#111; color:#fff;">
+        <p>© 2025 Emmanuel Gunawan | All Rights Reserved</p>
+      </div>
+  </div>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="index.js"></script>
+</body>
+</html>
+
+  <!-- ===== FOOTER ===== -->
+  <div class="background footer">
+      <div class="child col100" style="text-align:center; padding:20px; background:#111; color:#fff;">
+        <p>© 2025 Emmanuel Gunawan | All Rights Reserved</p>
+      </div>
+    </div>
+ 
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <script src="index.js"></script>
+  
+
+
+<!-- MUSIC -->
+<audio id="bg-music" loop preload="auto" style="display: none;">
+  <source src="audio/music-resonance.mp3" type="audio/mpeg">
+</audio>
+
+<div id="music-control">
+  <svg id="icon-sound-off" viewBox="0 0 24 24" fill="currentColor">
+    <path d="M4.22 4.22l15.56 15.56 1.41-1.41L5.64 2.81 4.22 4.22z"/>
+    <path d="M12 3v9.28a4.01 4.01 0 0 0-1.5-.28c-2.49 0-4.5 2.01-4.5 4.5s2.01 4.5 4.5 4.5 4.5-2.01 4.5-4.5V7h4V3h-7z" clip-rule="evenodd" fill-rule="evenodd"/>
+  </svg>
+  <svg id="icon-sound-on" viewBox="0 0 24 24" fill="currentColor" style="display: none;">
+    <path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"/>
+  </svg>
+</div>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="index.js"></script>
+</body>
+</html>

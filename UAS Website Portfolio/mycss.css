@@ -1,0 +1,74 @@
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+
+  div.container {
+    display: flex;
+    width: 1280px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  div.subcontainer {
+    display: flex;
+    width: 100%;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  div.background {
+    width: 100%;
+    position: relative;
+  }
+
+  /* ====== GLOBAL ====== */
+  h1, h2, h3, h4 {
+    color: #44ffca;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+
+  p {
+    color: #cfcfcf;
+    margin-bottom: 15px;
+  }
+
+  a {
+    color: #44ffca;
+    text-decoration: none;
+  }
+
+
+  div.col10 { width: 10%; }
+  div.col20 { width: 20%; }
+  div.col25 { width: 25%; }
+  div.col30 { width: 30%; }
+  div.col33 { width: 33.33%; }
+  div.col40 { width: 40%; }
+  div.col50 { width: 50%; }
+  div.col60 { width: 60%; }
+  div.col70 { width: 70%; }
+  div.col80 { width: 80%; }
+  div.col90 { width: 90%; }
+  div.col100 { width: 100%; }
+
+  #home {
+    scroll-margin-top: 500px;
+  }
+
+  #portfolio{
+    scroll-margin-bottom: 500px;
+  }
+
+  #about{
+    scroll-margin-top: 100px;
+  }
+
+  #services{
+    scroll-margin-top: 100px;
+  }
