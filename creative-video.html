@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- GANTI JUDUL INI SESUAI KATEGORI -->
+  <title>Creative Video Gallery</title>
+
+  <!-- CSS Global & Halaman Utama (untuk style konsisten) -->
+  <link rel="stylesheet" href="mycss.css">
+  <link rel="stylesheet" href="index.css">
+
+  <!-- CSS KHUSUS UNTUK HALAMAN GALERI -->
+  <link rel="stylesheet" href="gallery.css">
+
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  
+  <!-- FLICKITY CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+</head>
+<body>
+
+  <!-- BG VIDEO -->
+  <video autoplay muted loop playsinline id="bg-video">
+    <source src="video/bg-animate-comp.mp4" type="video/mp4">
+  </video>
+
+  <!-- ===== NAVBAR ===== -->
+  <div class="background navbar">
+    <div class="subcontainer navbar-inner">
+      <div class="nav-logo">
+
+        <a href="index.html"><img src="images/logo-n.png" alt="Logo" class="nav-logo-img"></a>
+      </div>
+      <div class="nav-menu">
+        <a href="index.html#home">Beranda</a>
+        <a href="index.html#portfolio">Karya</a>
+        <a href="index.html#about">Tentang</a>
+        <a href="index.html#services">Layanan</a>
+        <a href="index.html#contact">Kontak</a>
+      </div>
+    </div>
+  </div>
+
+
+  <main class="gallery-page-wrapper">
+    <div class="gallery-header">
+      <a href="index.html#portfolio" class="back-button">← Kembali ke Portofolio</a>
+      
+
+      <h2 id="gallery-title">Creative Video</h2>
+      <p id="gallery-description">
+        Ini adalah galeri Creative Video saya yang berisi rangkaian visual kreatif dengan pendekatan storytelling, ritme, dan mood. 
+        Setiap video dirancang untuk menghadirkan pengalaman visual yang imersif melalui komposisi, warna, dan penggerak emosi.
+      </p>
+    </div>
+
+
+    <div class="gallery-container js-flickity" 
+    data-flickity='{ 
+        "wrapAround": true, 
+        "imagesLoaded": true, 
+        "cellAlign": "center",
+        "pageDots": true,
+        "prevNextButtons": true,
+        "autoPlay": 4000,
+        "pauseAutoPlayOnHover": true
+    }'>
+    
+  
+      <div class="gallery-cell"><img src="images/creative-1.png" alt="creative 1"></div>
+      <div class="gallery-cell"><img src="images/creative-2.png" alt="creative 2"></div>
+      <div class="gallery-cell"><img src="images/creative-3.png" alt="creative 3"></div>
+      <div class="gallery-cell"><img src="images/creative-4.png" alt="creative 4"></div>
+      <div class="gallery-cell"><img src="images/creative-5.png" alt="creative 5"></div>
+  
+      
+    </div>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <div class="background footer">
+      <div class="child col100" style="text-align:center; padding:20px; background:#111; color:#fff;">
+        <p>© 2025 Emmanuel Gunawan | All Rights Reserved</p>
+      </div>
+  </div>
+
+    <!-- MUSIC -->
+<audio id="bg-music" loop preload="auto" style="display: none;">
+  <source src="audio/music-lifelike.mp3" type="audio/mpeg">
+</audio>
+
+<div id="music-control">
+  <svg id="icon-sound-off" viewBox="0 0 24 24" fill="currentColor">
+    <path d="M4.22 4.22l15.56 15.56 1.41-1.41L5.64 2.81 4.22 4.22z"/>
+    <path d="M12 3v9.28a4.01 4.01 0 0 0-1.5-.28c-2.49 0-4.5 2.01-4.5 4.5s2.01 4.5 4.5 4.5 4.5-2.01 4.5-4.5V7h4V3h-7z" clip-rule="evenodd" fill-rule="evenodd"/>
+  </svg>
+  <svg id="icon-sound-on" viewBox="0 0 24 24" fill="currentColor" style="display: none;">
+    <path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"/>
+  </svg>
+</div>
+
+
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+  <script src="index.js"></script>
+
+</body>
+</html>
